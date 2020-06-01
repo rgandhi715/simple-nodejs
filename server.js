@@ -7,7 +7,7 @@ const port = 8080
 app.use(express.json());
 
 let user = {
-  name: "Gaurav",
+  name: "Saurav",
   city: "Jaipur"
 }
 
@@ -26,7 +26,7 @@ function sleep(ms) {
 
 
 async function init() {
-  await sleep(10000);
+  await sleep(60000);
   app.listen(port, () =>{
     console.log(`Hey Gaurav! Your Application start listening on port ${port}`)
 })
